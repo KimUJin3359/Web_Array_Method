@@ -150,3 +150,16 @@ score.sort((a,b) => b - a);
   - map : 여러개
   - filter : 여러개 ~ 1개
   - reduce : 무조건 1개
+- const, let vs var
+  - var : 변수 호이스팅이 발생
+  - const, let : 변수 호이스팅이 발생하지 않는 것처럼 동작
+    - 객체값, 원시값에 따라 다름
+    ```
+    const a = 10; (할당)
+    a = 20; (재할당)
+    error
+    ```
+    ```
+    const a = {} (객체값)
+    a.~~ = --
+    ```
